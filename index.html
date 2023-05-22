@@ -1,168 +1,315 @@
 <!DOCTYPE html>
-<!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
-<!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
+<!-- @gabrielpgf: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
+<!-- @gabrielpgf: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
 <html lang="pt-BR">
-
   <head>
     <title>Gabriel Felippi Gonçalves da Silva</title>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/curriculo.css">
     
   </head>
 
   <body class="w3-light-grey" cz-shortcut-listen="true">
-  
     <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
+    <div class="w3-content w3-margin-top" style="max-width: 1400px">
       <!-- The Grid -->
       <div class="w3-row-padding">
-  
         <!-- Left Column -->
         <div class="w3-third">
-  
-          <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
+          <div class="light-theme-card w3-card-4" id="cardLeft">
+            <!-- @gabrielpgf: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
               <h2>Gabriel Felippi Gonçalves da Silva</h2>
+              <button class="noprint" id="themeButton" onclick="toggleTheme()">
+                <span class="icon" id="icone" title="Mudar para Tema Escuro"
+                  >🌙</span
+                >
+                <!-- ícone do botão -->              
             </div>
             <div class="w3-container">
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"></i>Programador Junior .NET | Angular | ASP Classic</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"></i>Rio de Janeiro - RJ - Brasil</p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"></i>gabrielpgf2011@gmail.com</p>
-              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"></i>(21) 98076-0773</p>
-              <hr>
-  
+              <p>
+                <i
+                  class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-indigo"
+                ></i
+                >Programador Junior .NET | Angular | ASP Classic
+              </p>
+              <p>
+                <i
+                  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-indigo"
+                ></i
+                >Rio de Janeiro - RJ - Brasil
+              </p>
+              <p>
+                <i
+                  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-indigo"
+                ></i
+                >gabrielpgf2011@gmail.com
+              </p>
+              <p>
+                <i
+                  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-indigo"
+                ></i
+                >(21) 98076-0773
+              </p>
+              <hr />
+
               <p class="w3-large">
-                <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"></i>Skills</b>
+                <b
+                  ><i
+                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-indigo"
+                  ></i
+                  >Skills</b
+                >
               </p>
               <p>.NET Core | C# | MVC</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:60%">60%</div>
+                <div
+                  class="w3-container w3-center w3-round-xlarge w3-indigo"
+                  style="width: 60%"
+                >
+                  60%
+                </div>
               </div>
               <p>SQL SERVER</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:50%">50%</div>
+                <div
+                  class="w3-container w3-center w3-round-xlarge w3-indigo"
+                  style="width: 50%"
+                >
+                  50%
+                </div>
               </div>
               <p>Angular</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:20%">20%</div>
+                <div
+                  class="w3-container w3-center w3-round-xlarge w3-indigo"
+                  style="width: 20%"
+                >
+                  20%
+                </div>
               </div>
               <p>ASP CLASSIC</p>
               <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-indigo" style="width:90%">90%</div>
+                <div
+                  class="w3-container w3-center w3-round-xlarge w3-indigo"
+                  style="width: 90%"
+                >
+                  90%
+                </div>
               </div>
-              <br>
-  
+              <br />
+
               <p class="w3-large w3-text-theme">
-                <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"></i>Idiomas</b>
+                <b
+                  ><i
+                    class="fa fa-globe fa-fw w3-margin-right w3-text-indigo"
+                  ></i
+                  >Idiomas</b
+                >
               </p>
               <p>Português</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:100%">100%</div>
+                <div
+                  class="w3-round-xlarge w3-indigo"
+                  style="height: 24px; width: 100%"
+                >
+                  100%
+                </div>
               </div>
               <p>Inglês</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-indigo" style="height:24px;width:60%">60%</div>
-              </div>              
-              <br>
+                <div
+                  class="w3-round-xlarge w3-indigo"
+                  style="height: 24px; width: 60%"
+                >
+                  60%
+                </div>
+              </div>
+              <br />
             </div>
-          </div><br>
-  
+          </div>
+          <br />
+
           <!-- End Left Column -->
         </div>
-  
+
         <!-- Right Column -->
         <div class="w3-twothird">
-    
           <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Sobre</h2>
-            <p>Desenvolvedor de Sistemas formado pela Unicarioca, com experiência em sistemas WEB de atendimento à Contact Centers, utilizando as seguintes tecnologias: .NET Core (arquitetura MVC, SOLID), SQL Server, ASP Classic e Angular.</p>
+            <h2 class="w3-padding-16 w3-text-grey">
+              <i
+                class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-indigo"
+              ></i
+              >Sobre
+            </h2>
+            <p>
+              Desenvolvedor de Sistemas formado pela Unicarioca, com experiência
+              em sistemas WEB de atendimento à Contact Centers, utilizando as
+              seguintes tecnologias: .NET Core (arquitetura MVC, SOLID), SQL
+              Server, ASP Classic e Angular.
+            </p>
           </div>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Experiências
+              <i
+                class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-indigo"
+              ></i
+              >Experiências
             </h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Internautica Call Center</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Janeiro 2019 - <span class="w3-tag w3-indigo w3-round">Atual</span></h6>
-              <p>Desenvolvimento de Sistemas Web (CRM) para registro dos atendimentos realizados no Contact Center, integração dos dados armazenados com os dados de telefonia para consolidação em relatórios. Elaboração de sistemas para que os clientes possam se comunicar e tratar as demandas dos usuários, ouvir as ligações em tempo real e sob demanda, relatórios de telefonia e dos atendimentos. Criação de aplicações internas que consomem APIs externas de clientes para persistência em base de dados para integração ao CRM e à URA de atendimento, disponibilizando para o usuário em tempo real o status mais acurado possível de sua demanda ou solicitação e, caso deseje, possa receber esta notificação por SMS.</p>
-              <hr>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Janeiro 2019
+                - <span class="w3-tag w3-indigo w3-round">Atual</span>
+              </h6>
+              <p>
+                Desenvolvimento de Sistemas Web (CRM) para registro dos
+                atendimentos realizados no Contact Center, integração dos dados
+                armazenados com os dados de telefonia para consolidação em
+                relatórios. Elaboração de sistemas para que os clientes possam
+                se comunicar e tratar as demandas dos usuários, ouvir as
+                ligações em tempo real e sob demanda, relatórios de telefonia e
+                dos atendimentos. Criação de aplicações internas que consomem
+                APIs externas de clientes para persistência em base de dados
+                para integração ao CRM e à URA de atendimento, disponibilizando
+                para o usuário em tempo real o status mais acurado possível de
+                sua demanda ou solicitação e, caso deseje, possa receber esta
+                notificação por SMS.
+              </p>
+              <hr />
             </div>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Suporte Técnico</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Maio 2018 - Janeiro 2019</h6>
-              <p>Atendimento de chamados, administração do parque de máquinas e servidores, virtualização de máquinas e servidores. Configuração de URAs de atendimento.</p>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Maio 2018 -
+                Janeiro 2019
+              </h6>
+              <p>
+                Atendimento de chamados, administração do parque de máquinas e
+                servidores, virtualização de máquinas e servidores. Configuração
+                de URAs de atendimento.
+              </p>
             </div>
           </div>
-  
+
           <div class="w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Educação
+              <i
+                class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-indigo"
+              ></i
+              >Educação
             </h2>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-indigo w3-round">Atual</span></h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO -
+                <span class="w3-tag w3-indigo w3-round">Atual</span>
+              </h6>
               <p>
-                Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
-                A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
-                de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:
+                Maior plataforma de educação aberta em TI da América Latina, com
+                mais 1 milhão de usuários. A DIO possui parcerias com algumas
+                das empresas mais inovadoras do mundo, proporcionando
+                experiências de ensino imersivas e com foco em empregabilidade.
+                Nesse contexto, seguem meus principais certificados:
               </p>
               <ul>
-                <li><a href="https://www.dio.me/certificate/52FEF598/share" target="_blank">Formação: .NET Developer (93h)</a></li>
-                <li><a href="https://www.dio.me/certificate/0323515A/share" target="_blank">Formação: .Net Fundamentals (40h)</a></li>
-                <li><a href="https://www.dio.me/certificate/E6902BA5" target="_blank">Formação: Linux Experience (42h)</a></li>
+                <li>
+                  <a
+                    href="https://www.dio.me/certificate/52FEF598/share"
+                    target="_blank"
+                    >Formação: .NET Developer (93h)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.dio.me/certificate/0323515A/share"
+                    target="_blank"
+                    >Formação: .Net Fundamentals (40h)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.dio.me/certificate/E6902BA5"
+                    target="_blank"
+                    >Formação: Linux Experience (42h)</a
+                  >
+                </li>
               </ul>
-              <hr>
+              <hr />
             </div>
             <div class="w3-container">
               <h5 class="w3-opacity"><b>Unicarioca</b></h5>
-              <h6 class="w3-text-indigo"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Julho 2013 - Junho 2019</h6>
+              <h6 class="w3-text-indigo">
+                <i class="fa fa-calendar fa-fw w3-margin-right"></i>Julho 2013 -
+                Junho 2019
+              </h6>
               <p>Curso superior de Análise e Desenvolvimento de Sistemas.</p>
             </div>
           </div>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"></i>Projetos
+              <i
+                class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-indigo"
+              ></i
+              >Projetos
             </h2>
             <div class="w3-container">
               <h6 class="w3-text-indigo">
                 <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/gabrielpgf/trilha-net-api-desafio" target="_blank">gabrielpgf/trilha-net-api-desafio</a>
+                <a
+                  href="https://github.com/gabrielpgf/trilha-net-api-desafio"
+                  target="_blank"
+                  >gabrielpgf/trilha-net-api-desafio</a
+                >
               </h6>
               <p>API de Tarefas em .NET Core com CRUD.</p>
-              <hr>
-            </div>            
+              <hr />
+            </div>
           </div>
-  
+
           <!-- End Right Column -->
         </div>
-  
+
         <!-- End Grid -->
       </div>
-  
+
       <!-- End Page Container -->
     </div>
-  
+
     <footer class="w3-container w3-indigo w3-center w3-margin-top">
       <p>Minhas Redes Sociais</p>
-      <a href="https://github.com/gabrielpgf" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/gabriel-goncalves-6b7409a2/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>            
-      <a href="https://twitter.com/GabrielPGF" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <a href="https://github.com/gabrielpgf" target="_blank"
+        ><i class="fa fa-github w3-hover-opacity"></i
+      ></a>
+      <a
+        href="https://www.linkedin.com/in/gabriel-goncalves-6b7409a2/"
+        target="_blank"
+        ><i class="fa fa-linkedin w3-hover-opacity"></i
+      ></a>
+      <a href="https://twitter.com/GabrielPGF" target="_blank"
+        ><i class="fa fa-twitter w3-hover-opacity"></i
+      ></a>
+      <p>
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
     </footer>
-  
   </body>
-
+  <script src="./scripts/curriculo.js"></script>
 </html>
